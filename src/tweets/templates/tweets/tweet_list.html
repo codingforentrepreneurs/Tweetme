@@ -8,6 +8,14 @@
         <h1>{{ request.user }}</h1>
         </div>
         <div class='col-sm-9 '>
+             {% if not request.GET.q %}
+                <div class=''>
+                    
+                    {% include "tweets/form.html" with form=create_form action_url=create_url btn_title='Tweet' %}
+
+                </div>
+                <hr/>
+            {% endif %}
         {% for object in object_list %}
             <div class="media">
                   <div class="media-left">
