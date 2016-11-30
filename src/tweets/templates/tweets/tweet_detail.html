@@ -1,3 +1,10 @@
-{{ object.content }}<br/>
-{{ object.user }}<br/>
-{{ object.timestamp|timesince }}
+{% extends "base.html" %}
+
+
+{% block content %}
+
+    {{ object.content }}<br/>
+    {{ object.user }}<br/>
+    {{ object.timestamp|timesince }}
+
+{% endblock content %}
