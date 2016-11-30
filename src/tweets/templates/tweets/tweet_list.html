@@ -2,18 +2,34 @@
 
 
 {% block content %}
-    {% include "tweets/search_form.html" %}<br/>
+   
+    <div class='row'>
+        <div class='col-sm-8 col-sm-offset-2'>
+             {% include "tweets/search_form.html" %}<br/>
+        {% for object in object_list %}
+            <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      {% if object.image %}
+                        <img class="media-object" src="..." alt="...">
+                     {% endif %}
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    {{ object.content }}<br/>
+                    via {{ object.user }} | {{ object.timestamp|timesince }} ago | <a href='{{ object.get_absolute_url }}'>View</a>
+                  </div>
+            </div>
+            <hr/>
+        {% empty %}
+            {% if request.GET.q %}
+             <p>No tweets found.</p>
+            {% else %}
+            <p>No tweets yet.</p>
+            {% endif %}
+        {% endfor %}
 
-    {% for object in object_list %}
-        <p>{{ object.content }}<br/>
-        {{ object.user }}<br/>
-        {{ object.timestamp|timesince }} ago</p><br/><br/>
-    {% empty %}
-        {% if request.GET.q %}
-         <p>No tweets found.</p>
-        {% else %}
-        <p>No tweets yet.</p>
-        {% endif %}
-    {% endfor %}
+        </div>
+    </div>
 
 {% endblock content %}
