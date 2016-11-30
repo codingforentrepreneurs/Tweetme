@@ -75,32 +75,56 @@ $(document).ready(function(){
 
   fetchTweets()
   
+  var charsStart = 140;
+  var charsCurrent = 0;
 
+  $("#tweet-form").append("<span id='tweetCharsLeft'>" + charsStart + "</span>")
+
+  $("#tweet-form textarea").keyup(function(event){
+      var tweetValue = $(this).val()
+      charsCurrent = charsStart - tweetValue.length
+      var spanChars = $("#tweetCharsLeft")
+      spanChars.text(charsCurrent)
+
+      if (charsCurrent > 0 ) {
+         // remove classes
+         spanChars.removeClass("grey-color")
+         spanChars.removeClass("red-color")
+      } else if (charsCurrent == 0) {
+         // add grey class
+         spanChars.removeClass("red-color")
+         spanChars.addClass("grey-color")
+      } else if (charsCurrent < 0) {
+          // add red class
+          spanChars.removeClass("grey-color")
+          spanChars.addClass("red-color")
+      }
+
+  })
 
   $("#tweet-form").submit(function(event){
       event.preventDefault()
       var this_ = $(this)
       var formData =  this_.serialize()
-
-      $.ajax({
-        url: "/api/tweet/create/",
-        data: formData,
-        method: "POST",
-        success: function(data){
-          this_.find("input[type=text], textarea").val("")
-          attachTweet(data, true)
-          // console.log(data)
-          // fetchTweets()
-          // tweetList = data
-          // parseTweets()
-         
-        },
-        error: function(data){
-          console.log("error")
-          console.log(data.statusText)
-          console.log(data.status)
-        }
-      })
+      if (charsCurrent >= 0) {
+        $.ajax({
+          url: "/api/tweet/create/",
+          data: formData,
+          method: "POST",
+          success: function(data){
+            this_.find("input[type=text], textarea").val("")
+            attachTweet(data, true)
+           
+          },
+          error: function(data){
+            console.log("error")
+            console.log(data.statusText)
+            console.log(data.status)
+          }
+        })
+      }  else {
+        console.log("Cannot send, tweet too long.")
+    }
 
 
 
