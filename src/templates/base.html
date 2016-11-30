@@ -39,6 +39,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     {% block script %}{% endblock script %}
+
+    <script>
+      $(document).ready(function(){
+        var typingTimer;
+        var doneInterval = 800; // in ms
+        var searchInput = $("#navbar-search-form input[type=text]")
+        var searchQuery;
+
+        searchInput.keyup(function(event){
+            searchQuery =  $(this).val()
+            clearTimeout(typingTimer)
+            typingTimer = setTimeout(doneSearchTyping, doneInterval)
+            
+        })
+
+         searchInput.keydown(function(event){
+            clearTimeout(typingTimer)  
+        })
+
+        function doneSearchTyping(){
+          if (searchQuery){
+            // do search
+            var url = '/tweet/search/?q=' + searchQuery
+            document.location.href = url;
+          }
+        }
+
+
+      })
+    </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
       <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
