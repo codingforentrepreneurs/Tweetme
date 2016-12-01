@@ -51,9 +51,12 @@ $(document).ready(function(){
   function updateHashLinks(){
     $(".media-body").each(function(data){
         var hashtagRegex = /(^|\s)#([\w\d-]+)/g
-        var newText = $(this).html().replace(hashtagRegex, "$1<a href='/tags/$2/'>#$2</a>")
+        var usernameRegex = /(^|\s)@([\w\d-]+)/g
+        var currentHtml = $(this).html()
+        var newText;
+        newText = currentHtml.replace(hashtagRegex, "$1<a href='/tags/$2/'>#$2</a>")
+        newText = newText.replace(usernameRegex, "$1 @<a href='/$2/'>$2</a>")
         $(this).html(newText)
-        
     })
   }
 
