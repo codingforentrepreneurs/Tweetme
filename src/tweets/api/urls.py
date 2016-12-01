@@ -4,7 +4,7 @@ from django.views.generic.base import RedirectView
 
 from .views import (
     TweetCreateAPIView,
-    TweetListAPIView
+    TweetListAPIView,
     )
 
 urlpatterns = [
