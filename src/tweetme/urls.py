@@ -25,9 +25,10 @@ from .views import home
 urlpatterns = [
     url(r'^admin/', admin.site.urls), #admin/
     url(r'^$', TweetListView.as_view(), name='home'), #/
-    url(r'^profiles/', include('accounts.urls', namespace='profiles')),
+
     url(r'^tweet/', include('tweets.urls', namespace='tweet')),
     url(r'^api/tweet/', include('tweets.api.urls', namespace='tweet-api')),
+    url(r'^', include('accounts.urls', namespace='profiles')),
 ]
 
 
