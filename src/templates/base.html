@@ -129,20 +129,27 @@ function loadTweetContainer(tweetContainerID){
 
 
   function formatTweet(tweetValue) {
+      
+      var preContent;
+      var container;
+      var tweetContent;
+      var isReply = tweetValue.reply;
+      if (tweetValue.parent && !isReply) {
+        // there is a retwet
+        tweetValue = tweetValue.parent
+         preContent = "<span class='grey-color'>Retweet via " + tweetValue.user.username +" on " + tweetValue.date_display + "</span><br/>"
+      } else if (tweetValue.parent && isReply) {
+         preContent = "<span class='grey-color'>Reply to @" + tweetValue.parent.user.username +  "</span><br/>"
+      }
+
       var verb = 'Like'
       if (tweetValue.did_like){
           verb = 'Unlike'
       }
-      var preContent;
-      var container;
-      var tweetContent;
-      if (tweetValue.parent) {
-        // there is a retwet
-        tweetValue = tweetValue.parent
-         preContent = "<span class='grey-color'>Retweet via " + tweetValue.user.username +" on " + tweetValue.date_display + "</span><br/>"
-      }
 
-      tweetContent = tweetValue.content + "<br/> via <a href='" + tweetValue.user.url + "'>" + tweetValue.user.username + "</a> | " + tweetValue.date_display + " | " + "<a href='/tweet/" + tweetValue.id + "'>View</a> | " + "<a class='retweetBtn' href='/tweet/" + tweetValue.id + "/retweet/'>Retweet</a>" + " | <a href='#' class='tweet-like' data-id=" + tweetValue.id + ">" + verb + " (" + tweetValue.likes + ")</a>"
+      
+
+      tweetContent = tweetValue.content + "<br/> via <a href='" + tweetValue.user.url + "'>" + tweetValue.user.username + "</a> | " + tweetValue.date_display + " | " + "<a href='/tweet/" + tweetValue.id + "'>View</a> | " + "<a class='retweetBtn' href='/tweet/" + tweetValue.id + "/retweet/'>Retweet</a>" + " | <a href='#' class='tweet-like' data-id=" + tweetValue.id + ">" + verb + " (" + tweetValue.likes + ")</a>" + " | <a href='#' class='tweet-reply' data-id=" + tweetValue.id + ">Reply</a>"
 
       if (preContent){
            container= "<div class=\"media\"><div class=\"media-body\">" + preContent + tweetContent + "</div></div><hr/>"

@@ -56,6 +56,7 @@ class Tweet(models.Model):
     user        = models.ForeignKey(settings.AUTH_USER_MODEL)
     content     = models.CharField(max_length=140, validators=[validate_content])
     liked       = models.ManyToManyField(settings.AUTH_USER_MODEL, blank=True, related_name='liked')
+    reply       = models.BooleanField(verbose_name='Is a reply?', default=False)
     updated     = models.DateTimeField(auto_now=True)
     timestamp   = models.DateTimeField(auto_now_add=True)
 
