@@ -127,26 +127,35 @@ function loadTweetContainer(tweetContainerID){
     })
   }
 
-  function attachTweet(tweetValue, prepend, retweet){
-      var dateDisplay = tweetValue.date_display;
-      var tweetContent = tweetValue.content;
-      var tweetUser = tweetValue.user;
-      var tweetFormattedHtml;
+
+  function formatTweet(tweetValue) {
       var verb = 'Like'
       if (tweetValue.did_like){
           verb = 'Unlike'
       }
-
-
-      if (retweet && tweetValue.parent){
-         // retweet
-        var mainTweet = tweetValue.parent
-         tweetFormattedHtml = "<div class=\"media\"><div class=\"media-body\"><span class='grey-color'>Retweet via " + tweetUser.username +" on " + dateDisplay + "</span><br/>"+ mainTweet.content + "<br/> via <a href='" + mainTweet.user.url + "'>" + mainTweet.user.username + "</a> | " + mainTweet.date_display + " | " + "<a href='/tweet/" + mainTweet.id + "'>View</a> | " + "<a class='retweetBtn' href='/tweet/" + tweetValue.id + "/retweet/'>Retweet</a>" + "  | <a href='#' class='tweet-like' data-id=" + tweetValue.id + ">" + verb + " (" + tweetValue.likes + ")</a></div></div><hr/>"
-      } else {
-        // fresh tweet
-         tweetFormattedHtml = "<div class=\"media\"><div class=\"media-body\">" + tweetContent + "<br/> via <a href='" + tweetUser.url + "'>" + tweetUser.username + "</a> | " + dateDisplay + " | " + "<a href='/tweet/" + tweetValue.id + "'>View</a> | " + "<a class='retweetBtn' href='/tweet/" + tweetValue.id + "/retweet/'>Retweet</a>" + " | <a href='#' class='tweet-like' data-id=" + tweetValue.id + ">" + verb + " (" + tweetValue.likes + ")</a></div></div><hr/>"
+      var preContent;
+      var container;
+      var tweetContent;
+      if (tweetValue.parent) {
+        // there is a retwet
+        tweetValue = tweetValue.parent
+         preContent = "<span class='grey-color'>Retweet via " + tweetValue.user.username +" on " + tweetValue.date_display + "</span><br/>"
       }
-      
+
+      tweetContent = tweetValue.content + "<br/> via <a href='" + tweetValue.user.url + "'>" + tweetValue.user.username + "</a> | " + tweetValue.date_display + " | " + "<a href='/tweet/" + tweetValue.id + "'>View</a> | " + "<a class='retweetBtn' href='/tweet/" + tweetValue.id + "/retweet/'>Retweet</a>" + " | <a href='#' class='tweet-like' data-id=" + tweetValue.id + ">" + verb + " (" + tweetValue.likes + ")</a>"
+
+      if (preContent){
+           container= "<div class=\"media\"><div class=\"media-body\">" + preContent + tweetContent + "</div></div><hr/>"
+      } else {
+           container = "<div class=\"media\"><div class=\"media-body\">" + tweetContent + "</div></div><hr/>"
+      }
+       
+       return container
+  }
+  function attachTweet(tweetValue, prepend, retweet){
+
+      tweetFormattedHtml = formatTweet(tweetValue)
+
       if (prepend==true){
         tweetContainer.prepend(tweetFormattedHtml)
       } else {
