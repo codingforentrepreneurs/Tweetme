@@ -70,7 +70,7 @@ function loadTweetContainer(tweetContainerID, fetchOneId){
   }
 
   var initialURL = tweetContainer.attr("data-url") || "/api/tweet/";
-  console.log(initialURL)
+  // console.log(initialURL)
 
 
   $(document.body).on("click", ".tweet-like", function(e){
@@ -382,7 +382,7 @@ function loadTweetContainer(tweetContainerID, fetchOneId){
         function doneSearchTyping(){
           if (searchQuery){
             // do search
-            var url = '/tweet/search/?q=' + searchQuery
+            var url = '/search/?q=' + searchQuery
             document.location.href = url;
           }
         }

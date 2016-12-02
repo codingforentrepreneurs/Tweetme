@@ -27,6 +27,7 @@ class TweetManager(models.Manager):
                     timestamp__year=timezone.now().year,
                     timestamp__month=timezone.now().month,
                     timestamp__day=timezone.now().day,
+                    reply=False,
                 )
         if qs.exists():
             return None
