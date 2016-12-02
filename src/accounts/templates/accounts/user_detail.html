@@ -22,17 +22,6 @@ $(document).ready(function(){
                     {% if following %}Unfollow{% else %}Follow{% endif %}
                 </a>
         </p>
-    </div>
-    <div class='col-sm-9 col-xs-12'>
-         <h1>Tweets</h1>
-          <div id='tweet-container' data-url='/api/{{ object.username }}/tweet/'>
-            
-          </div>
-          <a href='#' id='loadmore'>Load More Tweets</a>
-
-        
-
-
          <hr/>
           <h1>Following <small>{{ object.profile.get_following.count }}</small></h1>
 
@@ -50,6 +39,19 @@ $(document).ready(function(){
              <h4>Not followed by any users</h4>
              {% endfor %}
 
+
+    </div>
+    <div class='col-sm-9 col-xs-12'>
+         <h1>Tweets</h1>
+          <div id='tweet-container' data-url='/api/{{ object.username }}/tweet/'>
+            
+          </div>
+          <a href='#' id='loadmore'>Load More Tweets</a>
+
+        
+
+
+        
 
      </div>
 
