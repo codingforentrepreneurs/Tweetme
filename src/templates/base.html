@@ -28,12 +28,15 @@
   </head>
   <body>
     {% include "navbar.html" %}
+
     <div class='container'>
       
       {% block content %}
       {% endblock content %}
 
     </div>
+
+    {% include "reply-modal.html" %}
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -90,6 +93,22 @@ function loadTweetContainer(tweetContainerID){
 
       })
   })
+
+  $(document.body).on("click", ".tweet-reply", function(e){
+
+    e.preventDefault()
+    var this_ = $(this)
+    var parentId = this_.attr("data-id")
+    var username = this_.attr("data-user")
+    $("#replyModal").modal({})
+
+    $("#replyModal textarea").val("@" + username + " ")
+    $("#replyModal").on("shown.bs.modal", function(){
+      $('textarea').focus()
+    })
+  })
+
+
 
   $(document.body).on("click", ".retweetBtn", function(e){
 
@@ -149,7 +168,7 @@ function loadTweetContainer(tweetContainerID){
 
       
 
-      tweetContent = tweetValue.content + "<br/> via <a href='" + tweetValue.user.url + "'>" + tweetValue.user.username + "</a> | " + tweetValue.date_display + " | " + "<a href='/tweet/" + tweetValue.id + "'>View</a> | " + "<a class='retweetBtn' href='/tweet/" + tweetValue.id + "/retweet/'>Retweet</a>" + " | <a href='#' class='tweet-like' data-id=" + tweetValue.id + ">" + verb + " (" + tweetValue.likes + ")</a>" + " | <a href='#' class='tweet-reply' data-id=" + tweetValue.id + ">Reply</a>"
+      tweetContent = tweetValue.content + "<br/> via <a href='" + tweetValue.user.url + "'>" + tweetValue.user.username + "</a> | " + tweetValue.date_display + " | " + "<a href='/tweet/" + tweetValue.id + "'>View</a> | " + "<a class='retweetBtn' href='/tweet/" + tweetValue.id + "/retweet/'>Retweet</a>" + " | <a href='#' class='tweet-like' data-id='" + tweetValue.id + "''>" + verb + " (" + tweetValue.likes + ")</a>" + " | <a href='#' class='tweet-reply' data-user='" + tweetValue.user.username + "' data-id='" + tweetValue.id + "''>Reply</a>"
 
       if (preContent){
            container= "<div class=\"media\"><div class=\"media-body\">" + preContent + tweetContent + "</div></div><hr/>"
@@ -234,12 +253,12 @@ function loadTweetContainer(tweetContainerID){
   var charsStart = 140;
   var charsCurrent = 0;
 
-  $("#tweet-form").append("<span id='tweetCharsLeft'>" + charsStart + "</span>")
+  $(".tweet-form").append("<span class='tweetCharsLeft'>" + charsStart + "</span>")
 
-  $("#tweet-form textarea").keyup(function(event){
+  $(".tweet-form textarea").keyup(function(event){
       var tweetValue = $(this).val()
       charsCurrent = charsStart - tweetValue.length
-      var spanChars = $("#tweetCharsLeft")
+      var spanChars = $(this).parent().parent().parent().find("span.tweetCharsLeft")
       spanChars.text(charsCurrent)
 
       if (charsCurrent > 0 ) {
@@ -258,7 +277,7 @@ function loadTweetContainer(tweetContainerID){
 
   })
 
-  $("#tweet-form").submit(function(event){
+  $(".tweet-form").submit(function(event){
       event.preventDefault()
       var this_ = $(this)
       var formData =  this_.serialize()
@@ -271,6 +290,7 @@ function loadTweetContainer(tweetContainerID){
             this_.find("input[type=text], textarea").val("")
             attachTweet(data, true)
             updateHashLinks()
+            $("#replyModal").modal("hide")
            
           },
           error: function(data){
