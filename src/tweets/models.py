@@ -71,6 +71,18 @@ class Tweet(models.Model):
     class Meta:
         ordering = ['-timestamp']
 
+    def get_parent(self):
+        the_parent = self
+        if self.parent:
+            the_parent = self.parent
+        return the_parent
+
+    def get_children(self):
+        parent = self.get_parent()
+        qs = Tweet.objects.filter(parent=parent)
+        qs_parent = Tweet.objects.filter(pk=parent.pk)
+        return (qs | qs_parent)
+
     # def clean(self, *args, **kwargs):
     #     content = self.content
     #     if content == "abc":
