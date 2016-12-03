@@ -142,5 +142,7 @@ Watch it [here](https://kirr.co/2rhxyn)
 
 [71 - Single Detail View Replies](../../tree/a021d13181f99cca78fc76c771dd4d4d7ba2aa1f)
 
-    
+[72 - Search Tweets & Users](../../tree/54fb1ac59a9c0a0923c54341d23d6b81065ba992)
+
+[73 - HashTag Tweet List](../../tree/102000143f2dc7a605e332e5b1d06050334a83a8)
 
