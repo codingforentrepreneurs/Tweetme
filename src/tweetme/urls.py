@@ -19,6 +19,8 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 
+from accounts.views import UserRegisterView
+
 from hashtags.api.views import TagTweetAPIView
 from hashtags.views import HashTagView
 from tweets.api.views import SearchTweetAPIView
@@ -35,6 +37,8 @@ urlpatterns = [
     url(r'^api/search/$', SearchTweetAPIView.as_view(), name='search-api'), 
     url(r'^api/tweet/', include('tweets.api.urls', namespace='tweet-api')),
     url(r'^api/', include('accounts.api.urls', namespace='profiles-api')),
+    url(r'^register/$', UserRegisterView.as_view(), name='register'), #/
+    url(r'^', include('django.contrib.auth.urls')),
     url(r'^', include('accounts.urls', namespace='profiles')),
 ]
 
