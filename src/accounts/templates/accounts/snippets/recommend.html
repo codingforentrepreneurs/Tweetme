@@ -1,0 +1,5 @@
+{% for profile in recommended %}
+<a href='/{{ profile.user.username }}'>{{ profile.user.username }}</a><br/>
+{% empty %}
+<p class='lead'>Not followed by any users</p>
+{% endfor %}
