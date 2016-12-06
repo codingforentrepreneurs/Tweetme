@@ -146,3 +146,8 @@ Watch it [here](https://kirr.co/2rhxyn)
 
 [73 - HashTag Tweet List](../../tree/102000143f2dc7a605e332e5b1d06050334a83a8)
 
+[74 - Recommended Users & Custom Template Tag](../../tree/9d437cb7e8784b7edef753e42274bbc0334596c4)
+
+[75 - Registration & Auth](../../tree/42c28e6dd39735e7debcab87a63f2acc13d67980)
+
+[76 - Clean Up Project](../../tree/01dbcb4366f9f5cc81b601e5a63e26c3a958b1c8)
