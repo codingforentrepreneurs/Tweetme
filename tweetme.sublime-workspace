@@ -4,12 +4,268 @@
 		"selected_items":
 		[
 			[
-				"fr",
-				"friendship_receiver"
+				"User",
+				"UserRegisterView"
+			],
+			[
+				"U",
+				"UserRegisterForm"
+			],
+			[
+				"pass",
+				"password2"
+			],
+			[
+				"get_",
+				"get_queryset"
+			],
+			[
+				"mode",
+				"model_class"
+			],
+			[
+				"ha",
+				"hashtag"
+			],
+			[
+				"qu",
+				"queryset"
+			],
+			[
+				"get",
+				"get_user_model"
+			],
+			[
+				"media-",
+				"media-focus"
+			],
+			[
+				"qs",
+				"qs1"
+			],
+			[
+				"twet",
+				"tweetValue"
+			],
+			[
+				"tweet",
+				"tweetValue"
+			],
+			[
+				"tw",
+				"tweet"
+			],
+			[
+				"twee",
+				"tweet_obj"
+			],
+			[
+				"tweet_",
+				"tweet_id"
+			],
+			[
+				"Tw",
+				"Tweet"
+			],
+			[
+				"fet",
+				"fetchOneId"
+			],
+			[
+				"par",
+				"parentId"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"twe",
+				"tweetValue"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"like",
+				"like_count"
+			],
+			[
+				"se",
+				"seporator"
+			],
+			[
+				"Tweet",
+				"TweetListAPIView"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"is_",
+				"is_authenticated"
+			],
+			[
+				"not",
+				"not_liked"
+			],
+			[
+				"this",
+				"this_"
+			],
+			[
+				"req",
+				"requested_user"
+			],
+			[
+				"in",
+				"initialURL"
+			],
+			[
+				"cont",
+				"container_id"
 			],
 			[
 				"user",
-				"user_a"
+				"username"
+			],
+			[
+				"ti",
+				"timezone"
+			],
+			[
+				"date",
+				"dateDisplay"
+			],
+			[
+				"re",
+				"read_only"
+			],
+			[
+				"is",
+				"isRetweet"
+			],
+			[
+				"TW",
+				"TweetManager"
+			],
+			[
+				"new",
+				"newText"
+			],
+			[
+				"medi",
+				"media-body"
+			],
+			[
+				"im",
+				"im_following"
+			],
+			[
+				"pos",
+				"post_save_user_receiver"
+			],
+			[
+				"post",
+				"post_save_user"
+			],
+			[
+				"Use",
+				"UserProfile"
+			],
+			[
+				"to",
+				"toggle_user"
+			],
+			[
+				"use",
+				"user_profile"
+			],
+			[
+				"Us",
+				"UserProfileManager"
+			],
+			[
+				"Up",
+				"UserProfileManager"
+			],
+			[
+				"fo",
+				"following"
+			],
+			[
+				"f",
+				"following"
+			],
+			[
+				"ge",
+				"get_object_or_404"
+			],
+			[
+				"next",
+				"nextTweetUrl"
+			],
+			[
+				"fe",
+				"fecthUrl"
+			],
+			[
+				"fetch",
+				"fetchUrl"
+			],
+			[
+				"typ",
+				"typingTimer"
+			],
+			[
+				"searc",
+				"searchQuery"
+			],
+			[
+				"char",
+				"charsCurrent"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"ne",
+				"newValue"
+			],
+			[
+				"T",
+				"TweetModelSerializer"
+			],
+			[
+				"query",
+				"query"
+			],
+			[
+				"form",
+				"form_class"
+			],
+			[
+				"Twe",
+				"TweetModelForm"
+			],
+			[
+				"Create",
+				"CreateView"
+			],
+			[
+				"List",
+				"ListView"
+			],
+			[
+				"De",
+				"DetailView"
+			],
+			[
+				"fr",
+				"friendship_receiver"
 			],
 			[
 				"list",
@@ -36,14 +292,6 @@
 				"AnonymousUser"
 			],
 			[
-				"re",
-				"response"
-			],
-			[
-				"get",
-				"get_user_model"
-			],
-			[
 				"dele",
 				"delete_url"
 			],
@@ -68,16 +316,8 @@
 				"timestamp"
 			],
 			[
-				"User",
-				"UserActivity"
-			],
-			[
 				"a",
 				"activity"
-			],
-			[
-				"post",
-				"post_save_user_model_receiver"
 			],
 			[
 				"pub",
@@ -90,10 +330,6 @@
 			[
 				"blog",
 				"blog_post_model_pre_save_receiver"
-			],
-			[
-				"pos",
-				"post_model_post_save_receiver"
 			],
 			[
 				"Po",
@@ -128,20 +364,12 @@
 				"kwargs"
 			],
 			[
-				"se",
-				"settings"
-			],
-			[
 				"kirr",
 				"kirr_redirect_view"
 			],
 			[
 				"Kir",
 				"KirrURL"
-			],
-			[
-				"in",
-				"instance"
 			],
 			[
 				"s",
@@ -192,10 +420,6 @@
 				"access_secret"
 			],
 			[
-				"con",
-				"consumer_secret"
-			],
-			[
 				"cons",
 				"consumer_key"
 			],
@@ -236,10 +460,6 @@
 				"str"
 			],
 			[
-				"query",
-				"queryset"
-			],
-			[
 				"read",
 				"read_time_min"
 			],
@@ -250,10 +470,6 @@
 			[
 				"count",
 				"count_words"
-			],
-			[
-				"cont",
-				"content_type"
 			],
 			[
 				"Co",
@@ -298,232 +514,75 @@
 			[
 				"cle",
 				"clean_parent_id"
-			],
-			[
-				"COmm",
-				"CommentManager"
-			],
-			[
-				"content",
-				"content_type"
-			],
-			[
-				"co",
-				"comments"
-			],
-			[
-				"conten",
-				"content_type"
-			],
-			[
-				"mar",
-				"margin-left"
-			],
-			[
-				"conte",
-				"contentItem"
-			],
-			[
-				"mark",
-				"markedContent"
-			],
-			[
-				"tit",
-				"titleValue"
-			],
-			[
-				"use",
-				"username"
-			],
-			[
-				"get_o",
-				"get_object"
-			],
-			[
-				"usr",
-				"username"
-			],
-			[
-				"get_obj",
-				"get_object_or_404"
-			],
-			[
-				"sale",
-				"sale_price"
-			],
-			[
-				"ratin",
-				"rating_obj"
-			],
-			[
-				"prod",
-				"product"
-			],
-			[
-				"product",
-				"productrating_set"
-			],
-			[
-				"rai",
-				"ratings"
-			],
-			[
-				"rat",
-				"ratings"
-			],
-			[
-				"pro",
-				"product_obj"
-			],
-			[
-				"ra",
-				"rating_obj"
-			],
-			[
-				"ob",
-				"objects"
-			],
-			[
-				"Pr",
-				"ProductRating"
-			],
-			[
-				"Mu",
-				"MultipleObjectsReturned"
-			],
-			[
-				"Pro",
-				"ProductRating"
-			],
-			[
-				"inpu",
-				"inputValue"
-			],
-			[
-				"tra",
-				"transactions_today"
-			],
-			[
-				"today",
-				"today_max"
-			],
-			[
-				"date",
-				"datetime"
-			],
-			[
-				"get_",
-				"get_transactions"
-			],
-			[
-				"mode",
-				"models"
-			],
-			[
-				"is",
-				"is_active"
-			],
-			[
-				"Sell",
-				"SellerAccount"
-			],
-			[
-				"dow",
-				"download_link"
-			],
-			[
-				"w",
-				"wrap"
-			],
-			[
-				"http",
-				"Http404"
-			],
-			[
-				"produ",
-				"product_obj"
-			],
-			[
-				"fun",
-				"function"
-			],
-			[
-				"wid",
-				"width"
-			],
-			[
-				"po",
-				"products"
-			],
-			[
-				"to",
-				"top_tags_idless"
-			],
-			[
-				"Tag",
-				"TagView"
-			],
-			[
-				"new",
-				"new_view"
-			],
-			[
-				"Prod",
-				"ProductDetailView"
-			],
-			[
-				"ana",
-				"analytic_obj"
-			],
-			[
-				"an",
-				"analytic_obj"
-			],
-			[
-				"model",
-				"models"
-			],
-			[
-				"tag",
-				"tag_set"
-			],
-			[
-				"tags",
-				"tags_list"
-			],
-			[
-				"hd_",
-				"hd_max"
-			],
-			[
-				"hd",
-				"hd_created"
-			],
-			[
-				"temp",
-				"temp_loc"
-			],
-			[
-				"thu",
-				"thumb_file"
-			],
-			[
-				"Tu",
-				"Thumbnail"
-			],
-			[
-				"qu",
-				"query"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": " ",
+			"file": "src/accounts/views.py",
 			"settings":
 			{
-				"buffer_size": 1,
+				"buffer_size": 2063,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "from django.contrib.auth.mixins import LoginRequiredMixin\nfrom django.db.models import Q\nfrom django.shortcuts import render, get_object_or_404, redirect\nfrom django.http import HttpResponseRedirect\nfrom django.urls import reverse_lazy\nfrom django.views import View\nfrom django.views.generic import (\n                CreateView,\n                DetailView,\n                DeleteView, \n                ListView, \n                UpdateView\n                )\n\nfrom .forms import TweetModelForm\nfrom .mixins import FormUserNeededMixin, UserOwnerMixin\nfrom .models import Tweet\n\nclass RetweetView(View):\n    def get(self, request, pk, *args, **kwargs):\n        tweet = get_object_or_404(Tweet, pk=pk)\n        if request.user.is_authenticated():\n            new_tweet = Tweet.objects.retweet(request.user, tweet)\n            return HttpResponseRedirect(\"/\")\n        return HttpResponseRedirect(tweet.get_absolute_url())\n\n\nclass TweetCreateView(FormUserNeededMixin, CreateView):\n    form_class = TweetModelForm\n    template_name = 'tweets/create_view.html'\n    #success_url = reverse_lazy(\"tweet:detail\")\n\n\nclass TweetUpdateView(LoginRequiredMixin, UserOwnerMixin, UpdateView):\n    queryset = Tweet.objects.all()\n    form_class = TweetModelForm\n    template_name = 'tweets/update_view.html'\n    #success_url = \"/tweet/\"\n\n\nclass TweetDeleteView(LoginRequiredMixin, DeleteView):\n    model = Tweet\n    template_name = 'tweets/delete_confirm.html'\n    success_url = reverse_lazy(\"tweet:list\") #reverse()\n\n\n\nclass TweetDetailView(DetailView):\n    queryset = Tweet.objects.all()\n\n\nclass TweetListView(LoginRequiredMixin, ListView):\n    \n    \n    def get_queryset(self, *args, **kwargs):\n        qs = Tweet.objects.all()\n        query = self.request.GET.get(\"q\", None)\n        if query is not None:\n            qs = qs.filter(\n                    Q(content__icontains=query) |\n                    Q(user__username__icontains=query)\n                    )\n        return qs\n\n    def get_context_data(self, *args, **kwargs):\n        context = super(TweetListView, self).get_context_data(*args, **kwargs)\n        context['create_form'] = TweetModelForm()\n        context['create_url'] = reverse_lazy(\"tweet:create\")\n        return context\n\n\ndef tweet_detail_view(request, pk=None): # pk == id\n    #obj = Tweet.objects.get(pk=pk) # GET from database\n    obj = get_object_or_404(Tweet, pk=pk)\n    print(obj)\n    context = {\n        \"object\": obj\n    }\n    return render(request, \"tweets/detail_view.html\", context)\n",
+			"file": "src/tweets/views.py",
+			"file_size": 2492,
+			"file_write_time": 1481059086000000,
+			"settings":
+			{
+				"buffer_size": 2497,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/tweetme/settings/local.py",
+			"settings":
+			{
+				"buffer_size": 3612,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/tweetme/settings/production.py",
+			"settings":
+			{
+				"buffer_size": 3300,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/tweetme/settings/base.py",
+			"settings":
+			{
+				"buffer_size": 3299,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/templates/navbar.html",
+			"settings":
+			{
+				"buffer_size": 1634,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/accounts/templates/registration/login.html",
+			"settings":
+			{
+				"buffer_size": 1142,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 6120,
 				"line_ending": "Unix"
 			}
 		}
@@ -580,6 +639,70 @@
 	},
 	"file_history":
 	[
+		"/Users/cfe/Dev/tweetme/src/tweetme/settings/base.py",
+		"/Users/cfe/Dev/tweetme/src/accounts/urls.py",
+		"/Users/cfe/Dev/tweetme/src/accounts/templates/accounts/user_detail.html",
+		"/Users/cfe/Dev/tweetme/src/accounts/templates/registration/login.html",
+		"/Users/cfe/Dev/tweetme/src/accounts/templates/accounts/user_register_form.html",
+		"/Users/cfe/Dev/tweetme/src/accounts/forms.py",
+		"/Users/cfe/Dev/tweetme/src/tweetme/urls.py",
+		"/Users/cfe/Dev/tweetme/src/tweetme/settings/local.py",
+		"/Users/cfe/Dev/tweetme/src/tweetme/settings/production.py",
+		"/Users/cfe/Dev/tweetme/src/accounts/templates/accounts/login.html",
+		"/Users/cfe/Dev/tweetme/src/accounts/models.py",
+		"/Users/cfe/Dev/tweetme/src/tweets/templates/tweets/tweet_list.html",
+		"/Users/cfe/Dev/tweetme/src/accounts/templates/accounts/snippets/recommend.html",
+		"/Users/cfe/Dev/tweetme/src/accounts/views.py",
+		"/Users/cfe/Dev/tweetme/src/accounts/templatetags/recommended.py",
+		"/Users/cfe/Dev/tweetme/src/accounts/templatetags/__init__.py",
+		"/Users/cfe/Dev/tweetme/src/tweets/templates/tweets/tweet_detail.html",
+		"/Users/cfe/Dev/tweetme/src/tweets/views.py",
+		"/Users/cfe/Dev/tweetme/src/tweets/models.py",
+		"/Users/cfe/Dev/tweetme/src/tweets/api/serializers.py",
+		"/Users/cfe/Dev/tweetme/src/templates/base.html",
+		"/Users/cfe/Dev/tweetme/src/tweetme/views.py",
+		"/Users/cfe/Dev/tweetme/src/templates/search.html",
+		"/Users/cfe/Dev/tweetme/src/tweets/api/views.py",
+		"/Users/cfe/Dev/tweetme/src/hashtags/templates/hashtags/tag_view.html",
+		"/Users/cfe/Dev/tweetme/src/hashtags/api/__init__.py",
+		"/Users/cfe/Dev/tweetme/src/hashtags/api/views.py",
+		"/Users/cfe/Dev/tweetme/README.md",
+		"/Users/cfe/Dev/tweetme/src/tweets/templates/tweets/search_form.html",
+		"/Users/cfe/Dev/tweetme/src/templates/reply-modal.html",
+		"/Users/cfe/Dev/tweetme/src/tweets/templates/tweets/form.html",
+		"/Users/cfe/Dev/tweetme/src/tweets/api/urls.py",
+		"/Users/cfe/Dev/tweetme/src/accounts/api/urls.py",
+		"/Users/cfe/Dev/tweetme/src/tweets/migrations/0009_tweet_is_reply.py",
+		"/Users/cfe/Dev/tweetme/delete.md",
+		"/Users/cfe/Dev/tweetme/src/tweets/urls.py",
+		"/Users/cfe/Dev/tweetme/src/hashtags/signals.py",
+		"/Users/cfe/Dev/tweetme/src/hashtags/models.py",
+		"/Users/cfe/Dev/tweetme/src/hashtags/admin.py",
+		"/Users/cfe/Dev/tweetme/src/hashtags/views.py",
+		"/Users/cfe/Dev/tweetme/src/tweets/migrations/0007_tweet_retweet_user.py",
+		"/Users/cfe/Dev/tweetme/src/accounts/admin.py",
+		"/Users/cfe/Dev/tweetme/src/accounts/tests.py",
+		"/Users/cfe/Dev/tweetme/src/accounts/api/serializers.py",
+		"/Users/cfe/Dev/tweetme/src/tweets/api/pagination.py",
+		"/Users/cfe/Dev/tweetme/src/templates/navbar.html",
+		"/Users/cfe/Dev/tweetme/src/accounts/api/__init__.py",
+		"/Users/cfe/Dev/tweetme/src/tweets/api/__init__.py",
+		"/Users/cfe/Dev/tweetme/src/tweets/templates/tweets/create_view.html",
+		"/Users/cfe/Dev/tweetme/src/tweets/tests.py",
+		"/Users/cfe/Dev/tweetme/src/tweets/forms.py",
+		"/Users/cfe/Dev/tweetme/src/tweets/templates/tweets/detail_view.html",
+		"/Users/cfe/Dev/tweetme/src/tweets/templates/tweets/list_view.html",
+		"/Users/cfe/Dev/tweetme/src/tweets/validators.py",
+		"/Users/cfe/Dev/tweetme/src/tweets/admin.py",
+		"/Users/cfe/Dev/tweetme/src/tweets/mixins.py",
+		"/Users/cfe/Dev/tweetme/src/templates/home.html",
+		"/Users/cfe/Dev/tweetme/src/tweets/templates/tweets/update_view.html",
+		"/Users/cfe/Dev/tweetme/src/tweets/templates/tweets/delete_confirm.html",
+		"/Users/cfe/Dev/tweetme/src/tweets/validors.py",
+		"/Users/cfe/Dev/tweetme/src/static-storage/static/css/custom.css",
+		"/Users/cfe/Dev/tweetme/LICENSE",
+		"/Users/cfe/Dev/tweetme/src/tweetme/settings/__init__.py",
+		"/Users/cfe/Dev/tweetme/src/tweetme/settings.py",
 		"/Users/cfe/Desktop/blog-test/src/blog/urls.py",
 		"/Users/cfe/Desktop/blog-test/src/posts/forms.py",
 		"/Users/cfe/Desktop/blog-test/src/posts/urls.py",
@@ -643,71 +766,7 @@
 		"/Users/cfe/Desktop/trydjango110/src/shortener/management/__init__.py",
 		"/Users/cfe/Desktop/trydjango110/src/shortener/utils.py",
 		"/Users/cfe/Desktop/trydjango110/.gitignore",
-		"/Users/cfe/Desktop/trydjango110/readme.md",
-		"/Users/cfe/Desktop/trydjango110/src/db.sqlite3",
-		"/Users/cfe/Desktop/tweetup/src/tweet_it_up.py",
-		"/Users/cfe/Desktop/tryangular/src/js/app/app.module.js",
-		"/Users/cfe/Desktop/tryangular/src/js/app/app.config.js",
-		"/Users/cfe/Desktop/tryangular/config.ru",
-		"/Users/cfe/Desktop/tryangular/src/config.ru",
-		"/Users/cfe/Desktop/tryangular/quicktips.md",
-		"/Users/cfe/Desktop/tryangular/src/js/angular.min.js",
-		"/Users/cfe/Desktop/tryangular/README.md",
-		"/Users/cfe/Desktop/tryangular/new_log.md",
-		"/Users/cfe/Desktop/tryangular/src/js/app/blogList/blog-list.component.js",
-		"/Users/cfe/Desktop/tryangular/src/js/app/blogList/blog-list.module.js",
-		"/Users/cfe/Desktop/tryangular/src/quicktips.md",
-		"/Users/cfe/Desktop/tryangular/js/angular.min.js",
-		"/Users/cfe/Desktop/tryangular/index.html",
-		"/Users/cfe/Downloads/angular.min.js",
-		"/Users/cfe/Desktop/scrape/notes/yelpapi.py",
-		"/Users/cfe/Desktop/scrape/25/js_scrape.py",
-		"/Users/cfe/Desktop/30DaysofPython/day5_functions_start.py",
-		"/Users/cfe/Dropbox/CFE Projects/30 Days of Python/Notes/conditionals.py",
-		"/Users/cfe/Desktop/blog-api/src/posts/forms.py",
-		"/Users/cfe/Desktop/blog-api/src/blog/settings.py",
-		"/Users/cfe/Desktop/blog-api/src/posts/serializers.py",
-		"/Users/cfe/Desktop/blog-api/requirements.txt",
-		"/Users/cfe/Desktop/blog-api/src/comments/migrations/0002_auto_20160325_2151.py",
-		"/Users/cfe/Desktop/blog/src/posts/models.py",
-		"/Users/cfe/Desktop/blog/src/posts/utils.py",
-		"/Users/cfe/Desktop/blog/src/posts/views.py",
-		"/Users/cfe/Desktop/blog/src/comments/forms.py",
-		"/Users/cfe/Desktop/blog/src/blog/urls.py",
-		"/Users/cfe/Desktop/blog/src/templates/comment_thread.html",
-		"/Users/cfe/Desktop/blog/src/templates/post_detail.html",
-		"/Users/cfe/Desktop/blog/src/comments/views.py",
-		"/Users/cfe/Desktop/blog/src/comments/urls.py",
-		"/Users/cfe/Desktop/blog/src/comments/models.py",
-		"/Users/cfe/Desktop/blog/README.md",
-		"/Users/cfe/Desktop/blog/src/posts/migrations/0004_post_read_time.py",
-		"/Users/cfe/Desktop/blog/src/templates/base.html",
-		"/Users/cfe/Desktop/blog/src/templates/comments/comment_thread.html",
-		"/Users/cfe/Desktop/blog/src/static/css/base.css",
-		"/Users/cfe/Desktop/blog/src/posts/urls.py",
-		"/Users/cfe/Desktop/blog/src/comments/migrations/0002_comment_parent.py",
-		"/Users/cfe/Desktop/blog/src/posts/forms.py",
-		"/Users/cfe/Desktop/blog/src/templates/post_list.html",
-		"/Users/cfe/Desktop/blog/src/blog/settings.py",
-		"/Users/cfe/Desktop/blog/src/comments/admin.py",
-		"/Users/cfe/Desktop/blog/static_cdn/css/base.css",
-		"/Users/cfe/Desktop/blog/src/templates/post_form.html",
-		"/Users/jmitch/Desktop/blog/src/blog/urls.py",
-		"/Users/jmitch/Desktop/blog/src/blog/settings.py",
-		"/Users/jmitch/Desktop/blog/src/db.sqlite3",
-		"/Users/jmitch/Desktop/blog/src/blog/wsgi.py",
-		"/Users/jmitch/Desktop/blog/README.md",
-		"/Users/jmitch/Desktop/dm/src/products/views.py",
-		"/Users/jmitch/Desktop/dm/src/templates/form.html",
-		"/Users/jmitch/Desktop/dm/src/templates/form_include.html",
-		"/Users/jmitch/Desktop/dm/src/sellers/forms.py",
-		"/Users/jmitch/Desktop/dm/src/templates/base.html",
-		"/Users/jmitch/Desktop/dm/src/digitalmarket/mixins.py",
-		"/Users/jmitch/Desktop/dm/src/templates/products/product_list_snippet.html",
-		"/Users/jmitch/Desktop/dm/src/templates/products/library_list.html",
-		"/Users/jmitch/Desktop/dm/src/products/urls.py",
-		"/Users/jmitch/Desktop/dm/src/templates/products/product_detail.html",
-		"/Users/jmitch/Desktop/dm/src/templates/products/product_list.html"
+		"/Users/cfe/Desktop/trydjango110/readme.md"
 	],
 	"find":
 	{
@@ -734,6 +793,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"initialURL",
+			"loadTweetContainer",
+			"search",
+			"regex",
+			"options",
+			"form.html",
 			"post_create",
 			"post_model_list_view",
 			"$http",
@@ -855,13 +920,7 @@
 			"request",
 			"reset",
 			"checmicals",
-			"activity",
-			"Pag",
-			"quiz",
-			"middle",
-			"user_logged_in",
-			"create",
-			"create_user"
+			"activity"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -894,28 +953,224 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "src/accounts/views.py",
 					"settings":
 					{
-						"buffer_size": 1,
+						"buffer_size": 2063,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1,
-								1
+								398,
+								398
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/tweets/views.py",
+					"settings":
+					{
+						"buffer_size": 2497,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1625,
+								1625
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1172.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/tweetme/settings/local.py",
+					"settings":
+					{
+						"buffer_size": 3612,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1741,
+								1701
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1139.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/tweetme/settings/production.py",
+					"settings":
+					{
+						"buffer_size": 3300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1717,
+								1717
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1136.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/tweetme/settings/base.py",
+					"settings":
+					{
+						"buffer_size": 3299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1716,
+								1716
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1300.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/templates/navbar.html",
+					"settings":
+					{
+						"buffer_size": 1634,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1500,
+								1500
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 110.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/accounts/templates/registration/login.html",
+					"settings":
+					{
+						"buffer_size": 1142,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								981,
+								981
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 524.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "README.md",
+					"settings":
+					{
+						"buffer_size": 6120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6119,
+								6119
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
